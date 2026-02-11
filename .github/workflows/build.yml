@@ -28,6 +28,6 @@ jobs:
         name: Build and push Docker image
         run : |
           ./mvnw clean package -DskipTests
-          docker build -t docker-tutorial:latest .
+          docker build -t dockertutorial:latest .
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
           docker push ${{ secrets.DOCKER_USERNAME }}/dockertutorial:latest
