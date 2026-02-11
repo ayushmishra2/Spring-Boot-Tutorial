@@ -10,7 +10,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/bookmark")
+@RequestMapping("/api/bookmarks")
 @RequiredArgsConstructor
 public class BookmarkController {
 
