@@ -24,7 +24,7 @@ jobs:
       - name: Build with Maven
         run: ./mvnw verify
 
-      - if: {{ github.ref == 'refs/heads/main' }}
+      - if: ${{ github.ref == 'refs/heads/main' }}
         name: Build and push Docker image
         run : |
           ./mvnw clean package -DskipTests
