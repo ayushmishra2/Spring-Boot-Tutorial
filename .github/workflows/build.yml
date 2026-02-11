@@ -30,4 +30,4 @@ jobs:
           ./mvnw clean package -DskipTests
           docker build -t docker-tutorial:latest .
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push ${{ secrets.DOCKER_USERNAME }}/docker-tutorial:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/dockertutorial:latest
